@@ -1,0 +1,158 @@
+.navbar {
+  width: 90%;
+  height: 68px;
+  margin: 0 auto;
+  padding: 0 30px;
+  background: #D9EFDE;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 0 22px 22px;
+  box-sizing: border-box;
+  position: relative;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.nav-links a {
+  color: #232E26;
+  text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.nav-links a:hover {
+  text-decoration: underline;
+}
+.contact-btn {
+  height: 38px;
+  padding: 0 20px;
+  background-color: transparent;
+  border: 1px solid #232E26;
+  border-radius: 22px;
+  color: #232E26;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.download-btn {
+  height: 38px;
+  padding: 0 22px;
+  background-color: #232E26;
+  border: 1px solid #232E26;
+  border-radius: 22px;
+  color: #D9EFDE;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.menu-button {
+  display: none;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: #232E26;
+  font-size: 27px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    width: 92%;
+    height: 62px;
+    padding: 0 24px;
+  }
+  .logo img {
+    width: 90px;
+  }
+  .nav-links {
+    gap: 18px;
+  }
+  .nav-links a {
+    font-size: 12px;
+  }
+  .contact-btn,
+  .download-btn {
+    height: 34px;
+    padding: 0 15px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .navbar {
+    width: 94%;
+    height: auto;
+    min-height: 58px;
+    padding: 9px 16px;
+    flex-wrap: wrap;
+    border-radius: 0 0 18px 18px;
+  }
+  .logo img {
+    width: 90px;
+  }
+  .menu-button {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-links.show-menu {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    border-top: 1px solid rgba(29, 48, 39, 0.2);
+  }
+ .nav-links.show-menu a {
+    width: 100%;
+    padding: 11px 5px;
+    color: #232E26;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  .nav-links.show-menu .contact-btn {
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    padding: 0;
+    background-color: transparent;
+    border: 1px solid #232E26;
+    border-radius: 22px;
+    color: #232E26;
+    font-size: 14px;
+  }
+  .nav-links.show-menu .download-btn {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    padding: 0;
+    background-color: #232E26;
+    border: none;
+    border-radius: 22px;
+    color: #D9EFDE;
+    font-size: 14px;
+  }
+}
